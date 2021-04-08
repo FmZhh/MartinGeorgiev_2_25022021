@@ -7,21 +7,34 @@ html, body {
   background-color: white;
 }
 
-.ptop {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
 .img3 {
   height: 50px;
+}
+
+.nature {
+  font-size: small;
+}
+
+.accomudationsDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
 }
 
 .toplinks3 {
   display: flex;
   flex-direction: row;
-  margin: 15px;
+ 
   height: 70px;
   align-items: center;
+  
+}
+
+.firsticon {
+  color: blue;
+  font-size: 25px;
+  margin-right: 10px;
 }
 
 .Filters {
@@ -29,7 +42,11 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 110px;
+  justify-content: flex-start;
+}
+
+.side {
+  float: right;
 }
 
 .filter {
@@ -39,13 +56,13 @@ html, body {
   display: flex;
   align-items: center;
   border-radius: 25px;
-  width: fit-content;
+  width: 120px;
   white-space: nowrap;
 }
 
 .icons {
   border: #eeeeff solid 2px;
-  color: blue;
+  color: #0065FC;
   height: 30px;
   border-radius: 25px;
   background-color: #eeeeff;
@@ -86,12 +103,12 @@ html, body {
 
 .searchLeft {
   border: solid lightgrey 1px;
-  color: darkgoldenrod;
+  color: black;
   height: 100%;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   border-right: 0;
-  background-color: grey;
+  background-color: #F2F2F2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,7 +141,7 @@ html, body {
   align-items: center;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: blue;
+  background-color: #0065FC;
   padding-left: 10px;
   padding-right: 10px;
   border-left: 0px;
@@ -167,19 +184,19 @@ html, body {
 .box {
   margin-top: 5px;
   height: 160px;
-  width: 350px;
+  width: 425px;
   background-color: white;
   border: 5px white solid;
   border-radius: 15px;
   display: flex;
 }
-.imgtwobotbox{
+
+.imgtwobotbox {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 
 .BoxeOnee {
   margin: 5px 30px 5px 30px;
@@ -192,15 +209,16 @@ html, body {
   align-items: flex-start;
   border-radius: 15px;
   /* background-color: red; */
- 
 }
 
 .imgOne {
   width: 100%;
   height: 69%;
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-.boxoneimg{
+
+.boxoneimg {
   width: 200px;
 }
 
@@ -208,13 +226,14 @@ html, body {
   width: 100%;
   height: 100%;
   float: left;
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
-
-
 
 .ptop {
   font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
 }
 
 .Pmid {
@@ -249,17 +268,31 @@ html, body {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-.Ptop{
+
+.Ptop {
   font-family: 'Raleway', sans-serif;
+  font-weight: bold;
   margin-block-start: 0px;
   margin-block-end: 0px;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-.Ptoptop{
+
+.Ptoptop {
+  margin-left: 35px;
   font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  width: 425px;
 }
-.ptopTwo{
+
+.divTopRight {
+  margin-top: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  width: 425px;
+}
+
+.ptopTwo {
   font-family: 'Raleway', sans-serif;
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -278,11 +311,13 @@ html, body {
 }
 
 .check {
-  color: blue;
+  color: #0065FC;
 }
 
 .botp {
   margin-bottom: 100px;
+  margin-left: 35px;
+  font-weight: bold;
 }
 
 .BotPictures {
@@ -345,9 +380,9 @@ html, body {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
-.tallImgone{
-height: 90%;
 
+.tallImgone {
+  height: 90%;
 }
 
 .lastbox {
@@ -360,7 +395,6 @@ height: 90%;
   align-items: center;
   justify-content: center;
   justify-content: space-around;
- 
 }
 
 .bottomTextColums {
@@ -461,21 +495,21 @@ height: 90%;
     width: 300px;
     margin-bottom: 10px;
   }
-  .bottomTallContainer2{
+  .bottomTallContainer2 {
     height: 430px;
   }
-  .bottomShortContainer{
+  .bottomShortContainer {
     margin-bottom: 10px;
   }
-  .lastbox{
+  .lastbox {
     display: flex;
     flex-direction: column;
-  width: 300px;
-  height: 400px;
-  justify-content: left;
-  align-items: flex-start;
+    width: 300px;
+    height: 400px;
+    justify-content: left;
+    align-items: flex-start;
   }
-  .bottomTextColums{
+  .bottomTextColums {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 12px;
   }
