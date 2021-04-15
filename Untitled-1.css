@@ -1,7 +1,3 @@
-:root {
-  --shadowWidth: 2px;
-  --shadowCOlor: #aaaaaa;
-}
 
 html, body {
   background-color: white;
@@ -59,6 +55,18 @@ html, body {
   width: 120px;
   white-space: nowrap;
 }
+.filterone{
+  border: solid lightgrey 1px;
+  margin-left: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  width: 120px;
+  white-space: nowrap;
+  margin-bottom: 7px;
+}
+
 
 .icons {
   border: #eeeeff solid 2px;
@@ -154,7 +162,7 @@ html, body {
 }
 
 .leftside {
-  height: fit-content;
+
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -315,8 +323,7 @@ html, body {
 }
 
 .botp {
-  margin-bottom: 100px;
-  margin-left: 35px;
+  margin-left: 30px;
   font-weight: bold;
 }
 
@@ -345,6 +352,7 @@ html, body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  
   border: solid grey 0px;
   border-radius: 15px;
   box-shadow: var(--shadowWidth) var(--shadowWidth) var(--shadowWidth) var(--shadowCOlor);
@@ -383,6 +391,8 @@ html, body {
 
 .tallImgone {
   height: 90%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 .lastbox {
@@ -415,11 +425,37 @@ html, body {
   margin-inline-end: 0px;
   padding-left: 10px;
 }
+.botpar{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
 
 @media all and (max-width: 1024px) {
   body {
-    min-width: 300px;
+    min-width: 346px;
     display: block;
+  }
+  .searchcontainer {
+    margin-left: 10px;
+  }
+  .botpar{
+  margin-left: 35px;
+    
+  }
+  .start{
+    width: 380px;
+    display: flex;
+  }
+  .ptop{
+    justify-content: center;
+    display: flex;
+  }
+  .nature{
+    justify-content: center;
+    display: flex;
+  }
+  .Ptoptop{
+    margin-left: 81px;
   }
   div.leftsidegrid {
     display: grid;
@@ -427,7 +463,7 @@ html, body {
     height: fit-content;
     border-radius: 15px;
     background-color: white;
-    min-width: 300px;
+    min-width: 346px;
     justify-content: center;
     align-items: center;
   }
@@ -443,8 +479,8 @@ html, body {
     justify-content: space-around;
     align-items: center;
     height: fit-content;
-    width: fit-content;
-    padding-left: 20px;
+    width: 389px;
+    
     padding-right: 20px;
     border-radius: 15px;
     padding-bottom: 10px;
@@ -458,24 +494,26 @@ html, body {
   }
   .botp {
     background-color: white;
+    display: flex;
+    justify-content: center;
   }
   .leftside {
-    width: fit-content;
+    width: 405px;
     background-color: white;
   }
   .BoxeOnee {
     display: flex;
     align-content: center;
     justify-content: center;
-    width: 250px;
-    min-width: 300px;
+    min-width: 388px;
   }
   .toplinks3 {
-    min-width: 300px;
-    max-width: 300px;
+    width: 380px;
     flex-direction: unset;
     height: fit-content;
     flex-wrap: wrap;
+    justify-content: space-around;
+    
   }
   .Filters {
     width: 100%;
@@ -485,18 +523,22 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 1240px;
+    width: 390px;
+    
   }
   .tallImg {
     height: 168.3px;
-    width: 300px;
+    width: 346px;
   }
   .bottomTallContainer {
     height: 198px;
-    width: 300px;
-    margin-bottom: 10px;
+    width: 380px;
+    margin-left: 14px;
   }
   .bottomTallContainer2 {
     height: 430px;
+    width: 380px;
+    margin-left: 14px;
   }
   .bottomShortContainer {
     margin-bottom: 10px;
@@ -504,7 +546,9 @@ html, body {
   .lastbox {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 380px;
+    margin-left: 10px;
+    margin-left: 14px;
     height: 400px;
     justify-content: left;
     align-items: flex-start;
@@ -512,5 +556,27 @@ html, body {
   .bottomTextColums {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 12px;
+    width: 377px;
+  }
+  .imgContainer{
+    width: 380px;
+    
+  }
+  .tallImg {
+    width: 380px;
+    
+  }
+  .botbox{
+width: fit-content;
+  }
+  .botbox{
+    width: 500px;
+  }
+  .box{
+    width: 381px;
+    margin-left: 20px;
+  }
+  .divTopRight{
+    width: 367px;
   }
 }
